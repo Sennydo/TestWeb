@@ -20,6 +20,9 @@ const Navbar = () => {
                 <div className='hover:underline'>
                     <Link href={"/career"}>Career</Link>
                 </div>
+                <div className='hover:underline'>
+                    <Link href={"/contact"}>Contact</Link>
+                </div>
             </div>
         </div>
     )
