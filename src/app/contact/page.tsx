@@ -1,11 +1,12 @@
 import ContactComp from "@/components/contactcomp"
+import ContactWrapper from "@/components/contactWrapper";
 
 const Contact = () => {
 
     return(
         <div>
             Contact Page
-            <ContactComp />
+            <ContactWrapper />
         </div>
     )
 }

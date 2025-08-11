@@ -6,7 +6,6 @@ import Offering from "@/components/offersection";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Offering />
     </div>
