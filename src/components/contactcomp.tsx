@@ -43,29 +43,34 @@ const ContactComp = () => {
     }
 
     return (
-        <div>
-            Contact Component
-            <form onSubmit={submitFunc}>
-                <h1>Name</h1>
-                <input
-                    value={name}
-                    type='text'
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Enter Name"
-                />
+        <div >
+            <form onSubmit={submitFunc} className="flex flex-col gap-[2rem] min-w-[30rem]">
+                <div className="text-2xl">
+                    <h1>Name</h1>
+                    <input
+                        value={name}
+                        type='text'
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder="Enter Name"
+                        className="w-full border-1 rounded-2xl p-2"
+                    />
+                </div>
 
-                <h1>
-                    Message
-                </h1>
+                <div className="max-w-[40rem] text-2xl">
+                    <h1>
+                        Message
+                    </h1>
 
-                <input 
-                    value={message}
-                    type='text'
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Type your message"
-                />
+                    <textarea 
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        placeholder="Type your message"
+                        className="w-full border-1 rounded-2xl p-2"
+                    />
+                </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" className="border-1 px-[3rem] py-[1rem] rounded-2xl hover:bg-white hover:text-black" >Submit</button>
+
             </form>
         </div>
     )
