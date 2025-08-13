@@ -37,7 +37,7 @@ const ContactComp = () => {
                 },
             })
         }
-        catch(err: any) {
+        catch(err) {
             console.log("error", err)
         }
     }
